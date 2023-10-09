@@ -363,11 +363,11 @@ body {
   gap: 115px;
 }
 
-.form__wrapper {
+.form {
   background: #e8f4fa;
 }
 
-.form {
+.form__wrapper {
   max-width: 720px;
   margin: 0 auto;
   padding: 148px 0;
