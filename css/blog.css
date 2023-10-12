@@ -233,13 +233,36 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 84px;
-  padding-bottom: 140px;
+  padding-bottom: 78px;
 }
 
 .form {
   background: #e8f4fa;
-  margin-top: 136px;
+  margin-top: 78px;
   margin-bottom: 120px;
+  position: relative;
+}
+
+.form::after {
+  content: "";
+  background-image: url("/img/home/Star.png");
+  background-repeat: no-repeat;
+  width: 84px;
+  height: 77px;
+  position: absolute;
+  right: 1528px;
+  top: -45px;
+}
+
+.form::before {
+  content: "";
+  background-image: url("/img/home/Pai_Chart.png");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 57px;
+  position: absolute;
+  right: 629px;
+  top: 73px;
 }
 
 .form__wrapper {

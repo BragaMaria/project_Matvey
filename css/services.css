@@ -60,7 +60,21 @@ body {
 
 .heading__backgroung {
   background: rgba(16, 144, 203, 0.1);
+  max-height: 746px;
+  position: relative;
 }
+
+.heading__backgroung::after {
+  content: "";
+  background-image: url("/img/services/Succlent_angle.png");
+  background-repeat: no-repeat;
+  width: 92px;
+  height: 112px;
+  position: absolute;
+  right: 397px;
+  top: 417px;
+}
+
 .heading_img {
   width: 135px;
   height: 135px;
@@ -98,6 +112,52 @@ body {
   background-color: #fff;
   padding: 65px 82px 84px 62px;
   padding-top: 70px;
+  display: flex;
+  position: relative;
+  box-shadow: 0px 4px 114px 0px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+}
+
+.services__info-wrapper::after {
+  content: "";
+  position: absolute;
+  width: 874px;
+  height: 0.7px;
+  background: #d2d2d2;
+  right: 162px;
+  top: 214px;
+}
+
+.services__info-left-img_text {
+  display: flex;
+  gap: 40px;
+}
+
+.services__info-left {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  position: relative;
+}
+
+.services__info-left::after {
+  content: "";
+  position: absolute;
+  width: 0.7px;
+  height: 294.015px;
+  background: #d2d2d2;
+  right: 26px;
+}
+
+.services__info-right {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.services__info-right-img_text {
+  display: flex;
+  gap: 40px;
 }
 
 .services__info-top {
@@ -169,7 +229,7 @@ body {
 }
 
 .info__block_wrapper {
-  padding-top: 70px;
+  padding-top: 270px;
   display: flex;
   justify-content: space-between;
   gap: 85px;
@@ -218,9 +278,47 @@ body {
   padding: 9px 50px;
 }
 
+.rating__company {
+  position: relative;
+}
+
+.rating__company::after {
+  content: "";
+  background-image: url("/img/services/Bell_Angle.png");
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 135px;
+  position: absolute;
+  right: 447px;
+  top: -87px;
+}
+
 .rating__company_background {
   background: #1090cb;
   margin: 158px 0 140px 0;
+  position: relative;
+}
+
+.rating__company_background::after {
+  content: "";
+  background-image: url("/icon/line1.svg");
+  background-repeat: no-repeat;
+  width: 203px;
+  height: 229px;
+  position: absolute;
+  left: 297px;
+  top: -121px;
+}
+
+.rating__company_background::before {
+  content: "";
+  background-image: url("/icon/line2.svg");
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 109px;
+  position: absolute;
+  right: 402px;
+  top: -55px;
 }
 
 .rating__company_wrapper {
@@ -245,6 +343,92 @@ body {
   line-height: 177.9%; /* 28.464px */
   letter-spacing: 0.16px;
   text-align: center;
+}
+
+.rating__company_happy {
+  position: relative;
+}
+
+.rating__company_happy::after {
+  content: "";
+  background-image: url("/img/services/Succlentangle_left.png");
+  background-repeat: no-repeat;
+  width: 88px;
+  height: 104px;
+  position: absolute;
+  right: -112px;
+  top: 202px;
+}
+
+.form {
+  background: #e8f4fa;
+  position: relative;
+}
+.form::after {
+  content: "";
+  background-image: url("/img/home/Star.png");
+  background-repeat: no-repeat;
+  width: 84px;
+  height: 77px;
+  position: absolute;
+  right: 1528px;
+  top: -45px;
+}
+
+.form::before {
+  content: "";
+  background-image: url("/img/home/Pai_Chart.png");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 57px;
+  position: absolute;
+  right: 629px;
+  top: 73px;
+}
+
+.form__wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 148px 0;
+}
+
+.form_title {
+  color: #252525;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 170%; /* 51px */
+}
+
+.form_input {
+  color: #787878;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 84px 0px rgba(0, 0, 0, 0.07);
+  min-width: 530px;
+  padding: 20px 0 0 36px;
+}
+
+.form_button {
+  width: 173px;
+  height: 67px;
+  border-radius: 10px;
+  background: #000;
+  color: #fff4f4;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 170%; /* 27.2px */
+  padding: 20px 43px;
+}
+
+.form_group {
+  display: flex;
+  gap: 14px;
+  padding: 80px 0 0 0;
 }
 
 .footer__bottom {

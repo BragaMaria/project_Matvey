@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -128,11 +132,46 @@
       </div>
     </div>
 
+    <div class="slader">
+      <div class="slader__wrapper">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="/img/about/team_one.png" alt="man">
+              <div class="swiper-slide_subtitle">CEO</div>
+              <div class="swiper-slide_title">John kabras</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/about/team_two.png" alt="man2">
+              <div class="swiper-slide_subtitle">COO</div>
+              <div class="swiper-slide_title">Philips shene moris</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/about/team_three.png" alt="man3">
+              <div class="swiper-slide_subtitle">Tech lead</div>
+              <div class="swiper-slide_title">Equarn shamir  mohomad</div>
+            </div>
+            <div class="swiper-slide">
+              <img src="/img/about/team_four.png" alt="man4">
+              <div class="swiper-slide_subtitle">Head of UX</div>
+              <div class="swiper-slide_title">Janka indrajith</div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    
+
     <div class="form">
       <div class="container">
         <div class="form__wrapper">
           <div class="form_title">
-            Lorem Ipsum is simply dummy text of the printing.
+            Lorem Ipsum is simply dummy <br />
+            text of the printing.
           </div>
           <div class="form_group">
             <div class="form_input">
@@ -203,5 +242,8 @@
         Copyright ® 2021 Lorem All rights Rcerved
       </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/js/run.js"></script>
   </body>
 </html>

@@ -10,6 +10,32 @@ body {
   padding: 0 15px;
 }
 
+.header {
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  background-image: url("/img/home/blue_waves.png");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 530px;
+  position: absolute;
+  right: 0px;
+  top: 272px;
+}
+
+.header::before {
+  content: "";
+  background-image: url("/img/home/green_waves.png");
+  background-repeat: no-repeat;
+  width: 84px;
+  height: 530px;
+  position: absolute;
+  left: 0;
+  top: 458px;
+}
+
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -99,7 +125,7 @@ body {
   color: #1090cb;
 }
 
-.services{
+.services {
   position: relative;
 }
 
@@ -112,11 +138,11 @@ body {
   padding: 43px 0;
 }
 
-.services::before{
+.services::before {
   content: "";
-  border-bottom: 1px solid #C7C7C7;
+  border-bottom: 1px solid #c7c7c7;
   position: absolute;
-  bottom:0;
+  bottom: 0;
   right: 0;
   width: 100%;
 }
@@ -194,8 +220,8 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 1240px;
-  padding: 159px 0 0 0;
+  max-width: 1160px;
+  padding: 144px 0 0 0;
 }
 
 .banner__phone-info {
@@ -207,6 +233,22 @@ body {
   height: 65px;
   border-radius: 50%;
   padding: 25px;
+  z-index: 99;
+}
+
+.banners__phone {
+  position: relative;
+}
+
+.banners__phone::after {
+  content: "";
+  background-image: url("/icon/line.svg");
+  background-repeat: no-repeat;
+  width: 791px;
+  height: 1308px;
+  position: absolute;
+  right: 771px;
+    top: 168px;
 }
 
 .green_smail {
@@ -266,6 +308,18 @@ body {
   margin: 0 auto;
   gap: 50px;
   padding: 234px 0 0 0;
+  position: relative;
+}
+
+.banner_news::after {
+  content: "";
+  background-image: url("/img/home/Bell_Angle.png");
+  background-repeat: no-repeat;
+  width: 132px;
+  height: 148px;
+  position: absolute;
+  right: 5px;
+  top: 165px;
 }
 
 .banner_news_first {
@@ -363,8 +417,32 @@ body {
   gap: 115px;
 }
 
+
+
 .form {
   background: #e8f4fa;
+  position: relative;
+}
+.form::after {
+  content: "";
+  background-image: url("/img/home/Star.png");
+  background-repeat: no-repeat;
+  width: 84px;
+  height: 77px;
+  position: absolute;
+  right: 1528px;
+  top: -45px;
+}
+
+.form::before {
+  content: "";
+  background-image: url("/img/home/Pai_Chart.png");
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 57px;
+  position: absolute;
+  right: 629px;
+  top: 73px;
 }
 
 .form__wrapper {
